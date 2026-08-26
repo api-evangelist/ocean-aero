@@ -1,0 +1,15 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.oceanaero.com/
+limit_count: 0
+note: >-
+  Ocean Aero publishes no API and therefore no rate limits, no rate-limit response headers and no
+  documented exhaustion status code. Nothing to observe: there is no reachable API host to probe
+  (api./developer./docs./portal./data.oceanaero.com do not resolve). Recorded as a measured zero.
+probed:
+- url: https://www.oceanaero.com/
+  status: 200
+- url: https://www.oceanaero.com/openapi.json
+  status: 404
+rate_limits: []
+headers: []

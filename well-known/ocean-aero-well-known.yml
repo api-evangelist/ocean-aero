@@ -1,0 +1,56 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of /.well-known/* on every Ocean Aero host
+note: >-
+  Every probed path returned 404 (or a 301 to the www host, which then 404s). Ocean Aero serves a
+  Squarespace marketing site and publishes no /.well-known documents of any kind. This file records
+  a measured ABSENCE — no WellKnown or SecurityTxt pointer is wired in apis.yml, because there is no
+  served document for such a pointer to assert. The 404 bodies are the Squarespace HTML 404 page
+  (and a JSON {"message":"security.txt not found"} stub for security.txt), not documents.
+hosts:
+- host: www.oceanaero.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: oceanaero.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+  - path: /.well-known/agent.json
+    status: 301
+    file: null
