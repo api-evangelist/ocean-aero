@@ -9,6 +9,17 @@ description: >-
   through Ocean Aero's own proprietary mission-control GUI with fleet-wide waypoint and payload
   management. As of this profile Ocean Aero sells vehicles, payloads and mission services — it
   publishes no public developer program, no API reference and no machine-readable API contract.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://static1.squarespace.com/static/6a563a75f3daa06a8c545fa3/t/6a5643493543696e32b268b7/1784038217324/Option_5.png?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/ocean-aero/refs/heads/main/apis.yml
 x-type: company
