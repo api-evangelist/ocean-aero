@@ -20,6 +20,19 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - rate-limits
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://static1.squarespace.com/static/6a563a75f3daa06a8c545fa3/t/6a5643493543696e32b268b7/1784038217324/Option_5.png?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/ocean-aero/refs/heads/main/apis.yml
 x-type: company
